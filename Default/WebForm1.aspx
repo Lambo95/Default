@@ -21,8 +21,9 @@
                 </div>
                  <div class="col-6">
                      <asp:Image ID="Image1" runat="server" href=""/>
+                     <br />
                      <span>Prezzo di listino: </span>
-                     <asp:Label ID="PrezzodiListino" runat="server" Text="">
+                     <asp:Label ID="PrezzodiListino"  runat="server" Text="">
 
                      </asp:Label>
                   </div>   
