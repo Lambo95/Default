@@ -43,5 +43,26 @@ namespace Default
                 return list;
             }
         }
+
+        protected void CalcoloPrev_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ElencoAuto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int autoSel =Convert.ToInt32( ElencoAuto.SelectedItem.Text);
+            double autoSelCosto = Convert.ToDouble(autoSel);
+            foreach (Auto a in Auto.GetAuto()) 
+            {
+                switch (autoSel == a.Id)
+                {
+                    case 1:
+                        Image1.ImageUrl = "";
+                        break;
+                    
+                }
+            }
+        }
     }
 }
